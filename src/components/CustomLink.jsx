@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import "../resources/landing.css";
+import { Link } from "react-router-dom";
 
 export default function CustomLink({ icon, text, link, isDarkMode }) {
   return (
-    <div
+    <Link
+      to={link}
       style={{
         display: "flex",
         alignItems: "center",
         gap: "10px",
         height: "40px",
         textOverflow: "ellipsis",
+        textDecoration: "none",
       }}
     >
       <span>{icon}</span>
@@ -19,6 +22,6 @@ export default function CustomLink({ icon, text, link, isDarkMode }) {
       >
         {text}
       </p>
-    </div>
+    </Link>
   );
 }

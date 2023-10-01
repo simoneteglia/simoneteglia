@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "../resources/landing.css";
 import CustomLink from "./CustomLink";
+import { useOutletContext } from "react-router-dom";
 
-const Landing = ({ isDarkMode }) => {
+const Landing = () => {
+  const [windowSize, setWindowSize, isDarkMode] = useOutletContext();
   const styles = {
     container: {
       width: "708px",
@@ -31,16 +33,19 @@ const Landing = ({ isDarkMode }) => {
         icon={"🔎"}
         text={"Bi-LSTM Event Detector"}
         isDarkMode={isDarkMode}
+        link={"bilstm"}
       />
       <CustomLink
         icon={"🤗"}
         text={"LowRes Language Detection"}
         isDarkMode={isDarkMode}
+        link={"langid"}
       />
       <CustomLink
         icon={"💬"}
         text={"DistilBERT for WSD"}
         isDarkMode={isDarkMode}
+        link={"wsd"}
       />
 
       <h4 style={{ color: isDarkMode ? "white" : "black" }}>Web Developing</h4>
@@ -48,6 +53,7 @@ const Landing = ({ isDarkMode }) => {
         icon={"❌"}
         text={"TedxSapienzaU Website"}
         isDarkMode={isDarkMode}
+        link={"tedx"}
       />
     </section>
   );

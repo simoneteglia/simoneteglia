@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LuSunMoon } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setIsDarkMode }) => {
   const [isDark, setIsDark] = useState(false);
@@ -23,7 +24,10 @@ const Navbar = ({ setIsDarkMode }) => {
 
   return (
     <nav style={styles.navbarStyle}>
-      <h1 style={styles.titleStyle}>Simone Teglia</h1>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <h1 style={styles.titleStyle}>Simone Teglia</h1>
+      </Link>
+
       <LuSunMoon
         onClick={() => {
           setIsDarkMode(!isDark);
