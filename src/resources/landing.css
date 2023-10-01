@@ -22,9 +22,9 @@ p {
 }
 
 .custom-text::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: violet;
   content: "";
-  height: 3px;
+  height: 1px;
   width: 100%;
   position: absolute;
   bottom: -2px;

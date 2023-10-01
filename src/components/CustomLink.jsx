@@ -9,6 +9,7 @@ export default function CustomLink({ icon, text, link, isDarkMode }) {
         alignItems: "center",
         gap: "10px",
         height: "40px",
+        textOverflow: "ellipsis",
       }}
     >
       <span>{icon}</span>

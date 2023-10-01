@@ -7,6 +7,8 @@ const Landing = ({ isDarkMode }) => {
     container: {
       width: "708px",
       marginTop: "70px",
+      padding: "20px",
+      display: "block",
     },
     mainIcon: {
       fontSize: "80px",
@@ -32,7 +34,7 @@ const Landing = ({ isDarkMode }) => {
       />
       <CustomLink
         icon={"🤗"}
-        text={"Low Resource Language detection transformer model"}
+        text={"LowRes Language Detection"}
         isDarkMode={isDarkMode}
       />
       <CustomLink
