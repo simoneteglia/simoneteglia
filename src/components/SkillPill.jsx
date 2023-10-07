@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const SkillPill = ({ skill, bgColor, icon, color = "#000" }) => {
   const styles = {
     container: {
-      padding: "5px 10px",
+      padding: "7px 15px",
       borderRadius: "100px",
       backgroundColor: bgColor,
       fontSize: "20px",
