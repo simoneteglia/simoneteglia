@@ -25,10 +25,11 @@ export default function TedxSapienza() {
       <h1>TedxSapienzaU</h1>
       <p>
         As a full stack developer at TedxSapienzaU, I created the event's
-        official website using React and Node.js. I personally experimented with
-        Three.js and created the 3d bubbles in the homepage, symbol of the 2023
-        TedxSapienzaU edition. Now, I'm developing a React Native web app,
-        delving into cross-platform mobile development.
+        official website using React and Node.js for the front-end and back-end.
+        I personally experimented with Three.js and created the 3d bubbles in
+        the homepage, symbol of the 2023 TedxSapienzaU edition. Now, I'm
+        developing a React Native web app, delving into cross-platform mobile
+        development.
       </p>
       <p>
         Visit the website at{" "}
