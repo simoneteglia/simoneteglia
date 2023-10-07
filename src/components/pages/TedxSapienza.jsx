@@ -36,7 +36,7 @@ export default function TedxSapienza() {
           tedxsapienzau.com
         </a>
       </p>
-      <div style={{ display: "flex", gap: 20 }}>
+      <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
         <SkillPill skill="React" bgColor="#61DBFB" icon={<FaReact />} />
         <SkillPill skill="Node.js" bgColor="#6cc24a" icon={<FaNodeJs />} />
         <SkillPill skill="Javascript" bgColor="#f7df1e" icon={<FaJsSquare />} />
