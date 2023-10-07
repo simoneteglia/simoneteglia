@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SkillPill = ({ skill, bgColor, icon }) => {
+const SkillPill = ({ skill, bgColor, icon, color = "#000" }) => {
   const styles = {
     container: {
       padding: "5px 10px",
@@ -11,6 +11,7 @@ const SkillPill = ({ skill, bgColor, icon }) => {
       display: "flex",
       alignItems: "center",
       gap: 10,
+      color: color,
     },
   };
   return (

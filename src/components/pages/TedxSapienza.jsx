@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import { FaReact, FaNodeJs, FaJsSquare } from "react-icons/fa";
+import { SiThreedotjs } from "react-icons/si";
 import SkillPill from "../SkillPill";
+import { useOutletContext } from "react-router-dom";
 
-export default function TedxSapienza({ isDarkMode }) {
+export default function TedxSapienza() {
+  const [windowSize, setWindowSize, isDarkMode] = useOutletContext();
+
   const styles = {
     container: {
       width: "708px",
       marginTop: "70px",
       padding: "20px",
       display: "block",
+      color: isDarkMode ? "white" : "black",
     },
     iconStyle: {
       fontSize: "35px",
@@ -35,6 +40,12 @@ export default function TedxSapienza({ isDarkMode }) {
         <SkillPill skill="React" bgColor="#61DBFB" icon={<FaReact />} />
         <SkillPill skill="Node.js" bgColor="#6cc24a" icon={<FaNodeJs />} />
         <SkillPill skill="Javascript" bgColor="#f7df1e" icon={<FaJsSquare />} />
+        <SkillPill
+          skill="Three.js"
+          bgColor="#000"
+          color="#fff"
+          icon={<SiThreedotjs />}
+        />
       </div>
       <div
         style={{
