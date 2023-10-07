@@ -71,7 +71,9 @@ const router = createBrowserRouter([
 
 function HomeManager() {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("isDark") === "true" ? true : false
+  );
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -84,7 +86,11 @@ function HomeManager() {
 
   return (
     <div style={{ margin: 0 }}>
-      <Navbar windowSize={windowSize} setIsDarkMode={setIsDarkMode} />
+      <Navbar
+        windowSize={windowSize}
+        setIsDarkMode={setIsDarkMode}
+        isDarkMode={isDarkMode}
+      />
       <section
         style={{
           display: "flex",

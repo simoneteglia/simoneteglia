@@ -25,7 +25,7 @@ const Footer = ({ isDarkMode }) => {
       <a href="https://www.linkedin.com/in/simone-teglia/">
         <AiFillLinkedin style={styles.iconStyle} />
       </a>
-      <a>
+      <a href="https://huggingface.co/simoneteglia">
         <img
           src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png"
           width="35px"

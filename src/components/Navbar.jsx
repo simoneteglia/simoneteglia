@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { LuSunMoon } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ setIsDarkMode }) => {
-  const [isDark, setIsDark] = useState(false);
-
+const Navbar = ({ setIsDarkMode, isDarkMode }) => {
   const styles = {
     navbarStyle: {
       padding: "8px 30px",
@@ -14,11 +12,11 @@ const Navbar = ({ setIsDarkMode }) => {
       alignItems: "center",
       justifyContent: "space-between",
       fontFamily: "Syne",
-      color: isDark ? "white" : "black",
+      color: isDarkMode ? "white" : "black",
     },
     titleStyle: {
       cursor: "pointer",
-      color: isDark ? "white" : "black",
+      color: isDarkMode ? "white" : "black",
     },
   };
 
@@ -30,13 +28,13 @@ const Navbar = ({ setIsDarkMode }) => {
 
       <LuSunMoon
         onClick={() => {
-          setIsDarkMode(!isDark);
-          setIsDark(!isDark);
+          setIsDarkMode(!isDarkMode);
+          localStorage.setItem("isDark", !isDarkMode);
         }}
         style={{
           fontSize: "25px",
           cursor: "pointer",
-          color: isDark ? "white" : "black",
+          color: isDarkMode ? "white" : "black",
         }}
       />
     </nav>
