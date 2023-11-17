@@ -41,12 +41,6 @@ const Landing = () => {
         isDarkMode={isDarkMode}
         link={"langid"}
       />
-      <CustomLink
-        icon={"💬"}
-        text={"DistilBERT for WSD"}
-        isDarkMode={isDarkMode}
-        link={"wsd"}
-      />
 
       <h4 style={{ color: isDarkMode ? "white" : "black" }}>
         Machine Learning
