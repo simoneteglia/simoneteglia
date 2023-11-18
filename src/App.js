@@ -12,7 +12,6 @@ import Footer from "./components/Footer";
 import BiLSTM from "./components/pages/BiLSTM";
 import TedxSapienza from "./components/pages/TedxSapienza";
 import Langid from "./components/pages/Langid";
-import WSD from "./components/pages/WSD";
 
 const router = createBrowserRouter([
   {
@@ -60,10 +59,6 @@ const router = createBrowserRouter([
       {
         path: "/langid",
         element: <Langid />,
-      },
-      {
-        path: "/wsd",
-        element: <WSD />,
       },
     ],
   },

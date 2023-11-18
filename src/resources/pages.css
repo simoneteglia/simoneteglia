@@ -1,0 +1,27 @@
+ol {
+  padding-left: 50px;
+}
+li {
+  color: #4f4f4f;
+  padding-left: 16px;
+  margin-top: 40px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute;
+    top: -9px;
+    left: -31px;
+  }
+}
+
+strong {
+  color: #292929;
+}

@@ -27,6 +27,18 @@ const Landing = () => {
         University of Rome. My main interests are Machine Learning, Deep
         learning and Natural language processing.
       </p>
+      <p style={{ color: isDarkMode ? "white" : "black" }}>
+        🧑‍💻 I'm also a ReactJs enjoyer, I've developed lots of websites for fun,
+        university projects and work. The last website I've been working on is
+        the official website of{" "}
+        <a style={{ color: "violet" }} href="https://www.tedxsapienzau.com">
+          TedxSapienzaU
+        </a>
+        .
+      </p>
+      <p style={{ color: isDarkMode ? "white" : "black" }}>
+        In my free time I play football⚽️ and beach volley🏐
+      </p>
       <h3 style={{ color: isDarkMode ? "white" : "black" }}>My recent works</h3>
       <h4 style={{ color: isDarkMode ? "white" : "black" }}>NLP</h4>
       <CustomLink
@@ -41,7 +53,6 @@ const Landing = () => {
         isDarkMode={isDarkMode}
         link={"langid"}
       />
-
       <h4 style={{ color: isDarkMode ? "white" : "black" }}>
         Machine Learning
       </h4>

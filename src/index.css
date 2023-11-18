@@ -13,6 +13,7 @@ body {
 * {
   font-family: "Syne", sans-serif;
   transition: all 0.2s ease-out;
+  text-rendering: optimizelegibility;
 }
 
 button {
