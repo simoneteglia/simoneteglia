@@ -4,6 +4,7 @@ import SkillPill from "../SkillPill";
 import { FaReact, FaNodeJs, FaJsSquare } from "react-icons/fa";
 import { SiPytorch } from "react-icons/si";
 
+import global from "../../global.json";
 import "../../resources/pages.css";
 
 export default function BiLSTM() {
@@ -31,7 +32,12 @@ export default function BiLSTM() {
           The Bi-LSTM is coded from scratch in Pytorch and trained on the
           dataset given by the professor. The model takes in input a sentence
           and returns a tag for each word according to the BIO Tags{" "}
-          <strong>scenario, sentiment, change, action, possession</strong>.
+          <strong
+            style={{ color: isDarkMode ? global.COLORS.VIOLET : "#292929" }}
+          >
+            scenario, sentiment, change, action, possession
+          </strong>
+          .
           <br />
           Check out the code in the github{" "}
           <a href="https://github.com/simoneteglia/BiLSTM_EventDetector">

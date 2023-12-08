@@ -2,5 +2,8 @@
   "UTILS": {
     "MOBILE_WIDTH": "480",
     "TABLET_WIDTH": "1000"
+  },
+  "COLORS": {
+    "VIOLET": "#ee82ee"
   }
 }
