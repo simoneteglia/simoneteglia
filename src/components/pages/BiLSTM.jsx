@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { useOutletContext } from "react-router-dom";
-import SkillPill from "../SkillPill";
+import SkillPill from "../components/SkillPill";
 import { FaReact, FaNodeJs, FaJsSquare } from "react-icons/fa";
 import { SiPytorch } from "react-icons/si";
 

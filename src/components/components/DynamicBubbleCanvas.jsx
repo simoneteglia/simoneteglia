@@ -8,7 +8,7 @@ import {
 } from "@react-three/drei";
 import { useSpring } from "@react-spring/core";
 import { a } from "@react-spring/three";
-import global from "../global.json";
+import global from "../../global.json";
 import { useHelper } from "@react-three/drei";
 import { SpotLightHelper } from "three";
 

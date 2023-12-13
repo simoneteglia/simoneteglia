@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../resources/landing.css";
-import CustomLink from "./CustomLink";
+import CustomLink from "./components/CustomLink";
 import { useOutletContext } from "react-router-dom";
 
 const Landing = () => {

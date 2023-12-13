@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../resources/landing.css";
+import "../../resources/landing.css";
 import { Link } from "react-router-dom";
 
 export default function CustomLink({ icon, text, link, isDarkMode }) {

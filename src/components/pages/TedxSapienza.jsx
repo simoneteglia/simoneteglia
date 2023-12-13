@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaReact, FaNodeJs, FaJsSquare } from "react-icons/fa";
 import { SiThreedotjs } from "react-icons/si";
-import SkillPill from "../SkillPill";
+import SkillPill from "../components/SkillPill";
 import { useOutletContext } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
-import DynamicBubbleCanvas from "../DynamicBubbleCanvas";
+import DynamicBubbleCanvas from "../components/DynamicBubbleCanvas";
 import global from "../../global.json";
 
 export default function TedxSapienza() {
