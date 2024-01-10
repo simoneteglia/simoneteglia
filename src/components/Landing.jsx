@@ -49,20 +49,13 @@ const Landing = () => {
       />
       <CustomLink
         icon={"🤗"}
-        text={"LowRes Language Detection"}
+        text={"Europarl Language Detection"}
         isDarkMode={isDarkMode}
         link={"langid"}
       />
-      <h4 style={{ color: isDarkMode ? "white" : "black" }}>
+      {/* <h4 style={{ color: isDarkMode ? "white" : "black" }}>
         Machine Learning
-      </h4>
-      <CustomLink
-        icon={"🚀"}
-        text={"Solving Lunar Lander with DQN"}
-        isDarkMode={isDarkMode}
-        link={"bilstm"}
-      />
-
+      </h4> */}
       <h4 style={{ color: isDarkMode ? "white" : "black" }}>Web Developing</h4>
       <CustomLink
         icon={"❌"}
