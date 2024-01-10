@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import axios from "axios";
 import ResultBar from "../components/ResultBar";
+import SkillPill from "../components/SkillPill";
+import { SiPytorch } from "react-icons/si";
 
 import "../../resources/pages.css";
 
@@ -9,6 +11,7 @@ export default function Langid() {
   const [windowSize, setWindowSize, isDarkMode] = useOutletContext();
   const [text, setText] = useState("");
   const [results, setResults] = useState([]);
+  const [error, setError] = useState(false);
 
   const requestLanguage = () => {
     console.log(text);
@@ -24,11 +27,11 @@ export default function Langid() {
         }
       )
       .then((res) => {
-        console.log(res);
+        setError(false);
         setResults(res.data[0]);
       })
       .catch((err) => {
-        console.log(err);
+        setError(true);
       });
   };
 
@@ -50,13 +53,24 @@ export default function Langid() {
     <div style={styles.container}>
       <h1>Xlm-Roberta for europarl language detection</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, animi
-        temporibus corporis expedita explicabo, quod adipisci non consequatur
-        atque quasi quos enim repellendus et nesciunt accusamus pariatur
-        quibusdam velit corrupti aliquid deleniti quis voluptatibus. Expedita
-        laboriosam saepe dignissimos, debitis nostrum, illo eum eaque autem
-        mollitia in exercitationem? Perferendis, amet quis.
+        The model is trained on the Europarl corpus, which contains the
+        proceedings of the European Parliament from 1996 to 2011. The model is
+        able to recognize all the 21 languages present in the corpus with an
+        accuracy of 0.99 and F1 score of 0.99
       </p>
+      <p>
+        Check the{" "}
+        <a href="https://huggingface.co/simoneteglia/xlm-roberta-europarl-language-detection">
+          model card{" "}
+        </a>
+        on the HuggingFace website
+      </p>
+      <SkillPill
+        skill="Pytorch"
+        bgColor="#de3412"
+        color="#fff"
+        icon={<SiPytorch color="#fff" />}
+      />
       <br />
       <h1>Test the model here</h1>
       <section
@@ -96,9 +110,16 @@ export default function Langid() {
         </button>
       </section>
       <section id="results" style={{ paddingTop: "30px" }}>
-        {results.map((element) => {
-          return <ResultBar result={element.score} label={element.label} />;
-        })}
+        {!error ? (
+          results.map((element) => {
+            return <ResultBar result={element.score} label={element.label} />;
+          })
+        ) : (
+          <p style={{ color: "red", maxWidth: "35ch" }}>
+            There has been an error communicating with the HuggingFace servers.
+            Please try again
+          </p>
+        )}
       </section>
     </div>
   );
