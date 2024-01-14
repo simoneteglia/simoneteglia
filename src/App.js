@@ -95,7 +95,7 @@ function HomeManager() {
         <Outlet context={[windowSize, setWindowSize, isDarkMode]} />
       </section>
 
-      <Footer isDarkMode={isDarkMode} />
+      {/* <Footer isDarkMode={isDarkMode} /> */}
     </div>
   );
 }

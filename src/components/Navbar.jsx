@@ -11,7 +11,7 @@ const Navbar = ({ setIsDarkMode, isDarkMode }) => {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      fontFamily: "Syne",
+      fontWeight: "500",
       color: isDarkMode ? "white" : "black",
     },
     titleStyle: {
@@ -23,7 +23,7 @@ const Navbar = ({ setIsDarkMode, isDarkMode }) => {
   return (
     <nav style={styles.navbarStyle}>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <h1 style={styles.titleStyle}>Simone Teglia</h1>
+        <p style={styles.titleStyle}>ST</p>
       </Link>
 
       <LuSunMoon
