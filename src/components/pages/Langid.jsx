@@ -72,54 +72,21 @@ export default function Langid() {
         icon={<SiPytorch color="#fff" />}
       />
       <br />
-      <h1>Test the model here</h1>
+      <h2>Test the model here</h2>
       <section
-        id="inference-section"
         style={{
           display: "flex",
-          gap: "30px",
-          flexWrap: "wrap",
+          justifyContent: "center",
+          width: "100%",
+          height: "100%",
         }}
       >
-        <input
-          onChange={(e) => setText(e.target.value)}
-          onSubmit={requestLanguage}
-          style={{
-            fontSize: "20px",
-            border: "2px solid rgba(0,0,0,0.2)",
-            borderRadius: "15px",
-            padding: "0 10px",
-            flex: 1,
-            minHeight: "50px",
-          }}
-          type="text"
-        />
-        <button
-          id="submit-button"
-          onClick={requestLanguage}
-          style={{
-            width: "100px",
-            textAlign: "center",
-            fontWeight: "bold",
-            fontSize: "22px",
-            borderRadius: "15px",
-            padding: "0 40px",
-          }}
-        >
-          Submit
-        </button>
-      </section>
-      <section id="results" style={{ paddingTop: "30px" }}>
-        {!error ? (
-          results.map((element) => {
-            return <ResultBar result={element.score} label={element.label} />;
-          })
-        ) : (
-          <p style={{ color: "red", maxWidth: "35ch" }}>
-            There has been an error communicating with the HuggingFace servers.
-            Please try again
-          </p>
-        )}
+        <iframe
+          src="https://simoneteglia-europarl-language-detection.hf.space"
+          frameborder="0"
+          width="100%"
+          height="600"
+        ></iframe>
       </section>
     </div>
   );
