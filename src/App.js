@@ -12,6 +12,9 @@ import Footer from "./components/Footer";
 import BiLSTM from "./components/pages/BiLSTM";
 import TedxSapienza from "./components/pages/TedxSapienza";
 import Langid from "./components/pages/Langid";
+import Zip from "./components/pages/Zip";
+import Careers from "./components/pages/Careers";
+import LyricsGeneration from "./components/pages/LyricsGeneration";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +62,18 @@ const router = createBrowserRouter([
       {
         path: "/langid",
         element: <Langid />,
+      },
+      {
+        path: "/zip",
+        element: <Zip />,
+      },
+      {
+        path: "/lyricsgeneration",
+        element: <LyricsGeneration />,
+      },
+      {
+        path: "/careers",
+        element: <Careers />,
       },
     ],
   },

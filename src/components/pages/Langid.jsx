@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
-import axios from "axios";
-import ResultBar from "../components/ResultBar";
 import SkillPill from "../components/SkillPill";
 import { SiPytorch } from "react-icons/si";
 
@@ -9,31 +7,6 @@ import "../../resources/pages.css";
 
 export default function Langid() {
   const [windowSize, setWindowSize, isDarkMode] = useOutletContext();
-  const [text, setText] = useState("");
-  const [results, setResults] = useState([]);
-  const [error, setError] = useState(false);
-
-  const requestLanguage = () => {
-    console.log(text);
-    let data = JSON.stringify(text);
-    axios
-      .post(
-        "https://api-inference.huggingface.co/models/simoneteglia/xlm-roberta-europarl-language-detection",
-        data,
-        {
-          headers: {
-            Authorization: "Bearer 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",
-          },
-        }
-      )
-      .then((res) => {
-        setError(false);
-        setResults(res.data[0]);
-      })
-      .catch((err) => {
-        setError(true);
-      });
-  };
 
   const styles = {
     container: {

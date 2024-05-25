@@ -88,7 +88,6 @@ const Landing = () => {
         </a>
         .
       </p>
-
       <h2 style={{ color: isDarkMode ? "white" : "black" }}>My recent works</h2>
       <h3 style={{ color: isDarkMode ? "white" : "black" }}>NLP</h3>
       <CustomLink
@@ -103,15 +102,31 @@ const Landing = () => {
         isDarkMode={isDarkMode}
         link={"langid"}
       />
-      {/* <h4 style={{ color: isDarkMode ? "white" : "black" }}>
-        Machine Learning
-      </h4> */}
+      <h3 style={{ color: isDarkMode ? "white" : "black" }}>Deep Learning</h3>
+      <CustomLink
+        icon={"🤖"}
+        text={"NN-Based Character-to-Symbol Text Compression"}
+        isDarkMode={isDarkMode}
+        link={"zip"}
+      />
+      {/* <CustomLink
+        icon={"🎵"}
+        text={"Lyrics Generation with LLM"}
+        isDarkMode={isDarkMode}
+        link={"lyricsgeneration"}
+      /> */}
       <h3 style={{ color: isDarkMode ? "white" : "black" }}>Web Developing</h3>
       <CustomLink
         icon={"❌"}
         text={"TedxSapienzaU Website"}
         isDarkMode={isDarkMode}
         link={"tedx"}
+      />
+      <CustomLink
+        icon={"📊"}
+        text={"Sapienza's students careers visualization"}
+        isDarkMode={isDarkMode}
+        link={"careers"}
       />
     </section>
   );

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function CustomLink({ icon, text, link, isDarkMode }) {
   return (
-    <Link
-      to={link}
+    <a
+      href={link}
       style={{
         display: "flex",
         alignItems: "center",
@@ -22,6 +22,6 @@ export default function CustomLink({ icon, text, link, isDarkMode }) {
       >
         {text}
       </p>
-    </Link>
+    </a>
   );
 }

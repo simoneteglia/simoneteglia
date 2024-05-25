@@ -39,9 +39,9 @@ export default function BiLSTM() {
           </strong>
           .
           <br />
-          Check out the code in the github{" "}
+          Check out the code in the{" "}
           <a href="https://github.com/simoneteglia/BiLSTM_EventDetector">
-            repo
+            github repo
           </a>
           .
         </p>
