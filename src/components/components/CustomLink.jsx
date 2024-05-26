@@ -10,7 +10,7 @@ export default function CustomLink({ icon, text, link, isDarkMode }) {
         display: "flex",
         alignItems: "center",
         gap: "10px",
-        height: "40px",
+        height: "45px",
         textOverflow: "ellipsis",
         textDecoration: "none",
       }}
@@ -18,7 +18,7 @@ export default function CustomLink({ icon, text, link, isDarkMode }) {
       <span>{icon}</span>
       <p
         className="custom-text"
-        style={{ color: isDarkMode ? "white" : "black" }}
+        style={{ color: isDarkMode ? "white" : "black", lineHeight: "20px" }}
       >
         {text}
       </p>
