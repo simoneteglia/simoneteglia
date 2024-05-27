@@ -33,7 +33,7 @@ export default function Careers() {
         the computer science bachelor. The project is developed using D3.js and
         React.
         <br />
-        Check the website{" "}
+        🌐 Check the website{" "}
         <a href="https://visual-analytics-sapienza-students.vercel.app/">
           here
         </a>

@@ -33,7 +33,7 @@ export default function Zip() {
         Our approach involves converting text and zipped files into hexadecimal
         format to facilitate model training and prediction.
         <br />
-        Check out the code in the{" "}
+        🌐 Check out the code in the{" "}
         <a href="https://github.com/simoneteglia/sequence_translation_for_text_compression">
           github repository
         </a>
@@ -57,9 +57,7 @@ export default function Zip() {
           }
         />
       </div>
-
       <br />
-
       <div
         style={{
           width: "100%",

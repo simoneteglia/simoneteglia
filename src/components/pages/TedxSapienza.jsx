@@ -37,7 +37,7 @@ export default function TedxSapienza() {
             cross-platform mobile development.
           </p>
           <p>
-            Visit the website at{" "}
+            🌐 Visit the website at{" "}
             <a style={{ color: "red" }} href="https://www.tedxsapienzau.com/">
               tedxsapienzau.com
             </a>
@@ -85,7 +85,7 @@ export default function TedxSapienza() {
             cross-platform mobile development.
           </p>
           <p>
-            Visit the website at{" "}
+            🌐 Visit the website at{" "}
             <a style={{ color: "red" }} href="https://www.tedxsapienzau.com/">
               tedxsapienzau.com
             </a>
