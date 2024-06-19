@@ -27,8 +27,14 @@ const Landing = () => {
 
   return (
     <section style={styles.container}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+        }}
+      >
+        <div className="personal-info">
           <h1
             style={{ color: isDarkMode ? "white" : "black", fontWeight: "600" }}
           >
@@ -70,6 +76,7 @@ const Landing = () => {
           </div>
         </div>
         <div
+          className="personal-image"
           style={{
             width: "300px",
             height: "300px", // Ensure the height and width are the same for a perfect circle

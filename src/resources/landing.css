@@ -38,3 +38,15 @@ p {
 a {
   color: #ee82ee;
 }
+
+@media (max-width: 768px) {
+  .personal-image {
+    order: 1;
+    margin: auto;
+    margin-top: -80px;
+  }
+
+  .personal-info {
+    order: 2;
+  }
+}
