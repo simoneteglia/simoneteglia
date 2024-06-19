@@ -27,40 +27,59 @@ const Landing = () => {
 
   return (
     <section style={styles.container}>
-      <h1 style={{ color: isDarkMode ? "white" : "black", fontWeight: "600" }}>
-        Simone Teglia
-      </h1>
-      <p
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "10px",
-          color: isDarkMode ? "white" : "black",
-        }}
-      >
-        <FiGlobe
-          style={{ fontSize: "30px", color: isDarkMode ? "white" : "black" }}
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div>
+          <h1
+            style={{ color: isDarkMode ? "white" : "black", fontWeight: "600" }}
+          >
+            👋 Hey there! <br /> I'm Simone Teglia
+            <p
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: isDarkMode ? "white" : "black",
+              }}
+            >
+              <FiGlobe
+                style={{
+                  fontSize: "20px",
+                  color: isDarkMode ? "white" : "black",
+                }}
+              />
+              Rome, IT
+            </p>
+          </h1>
+
+          <div style={{ marginBottom: "60px", display: "flex", gap: "30px" }}>
+            <a href="https://github.com/simoneteglia">
+              <FiGithub style={styles.iconStyle} />
+            </a>
+            <a href="https://www.linkedin.com/in/simone-teglia/">
+              <FiLinkedin style={styles.iconStyle} />
+            </a>
+            <a href="https://twitter.com/Enimoss9">
+              <FiTwitter style={styles.iconStyle} />
+            </a>
+            <a href="https://huggingface.co/simoneteglia">
+              <img
+                src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png"
+                width="35px"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          style={{
+            width: "300px",
+            height: "300px", // Ensure the height and width are the same for a perfect circle
+            backgroundImage: `url('/media/simone.webp')`,
+            backgroundSize: "cover", // Cover ensures the image covers the entire div without being stretched
+            backgroundPosition: "center", // Center the image within the div
+            borderRadius: "50%", // This makes the div circular
+          }}
         />
-        Rome, IT,
-      </p>
-      <div style={{ marginBottom: "60px", display: "flex", gap: "30px" }}>
-        <a href="https://github.com/simoneteglia">
-          <FiGithub style={styles.iconStyle} />
-        </a>
-        <a href="https://www.linkedin.com/in/simone-teglia/">
-          <FiLinkedin style={styles.iconStyle} />
-        </a>
-        <a href="https://twitter.com/Enimoss9">
-          <FiTwitter style={styles.iconStyle} />
-        </a>
-        <a href="https://huggingface.co/simoneteglia">
-          <img
-            src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png"
-            width="35px"
-          />
-        </a>
       </div>
-      <h2 style={{ color: isDarkMode ? "white" : "black" }}>About</h2>
       <p
         style={{
           color: isDarkMode ? "white" : "black",
@@ -68,10 +87,10 @@ const Landing = () => {
           fontSize: "16px",
         }}
       >
-        Hi I’m Simone Teglia, graduated in computer science and currently
-        enrolled in a M.sc. in engineering in computer science at Sapienza
-        University of Rome. My main interests are Machine Learning, Deep
-        learning and Natural language processing.
+        I'm a computer science graduate and currently enrolled in a M.sc. in
+        engineering in computer science at Sapienza University of Rome. My main
+        interests are Machine Learning, Deep learning and Natural language
+        processing.
       </p>
       <p
         style={{
