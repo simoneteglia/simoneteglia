@@ -94,10 +94,15 @@ const Landing = () => {
           fontSize: "16px",
         }}
       >
-        I'm a computer science graduate and currently enrolled in a M.sc. in
-        engineering in computer science at Sapienza University of Rome. My main
-        interests are Machine Learning, Deep learning and Natural language
-        processing.
+        I recently graduated with honors in a M.sc. in engineering in computer
+        science at Sapienza University of Rome. I now work as a fellow
+        researcher at <a href="https://alcorlab.diag.uniroma1.it/">ALCOR Lab</a>{" "}
+        on <strong>Multimodal DeepFake Detection</strong> and{" "}
+        <strong>
+          Deep Learning methods for trajectory forecasting of vehicles on the
+          road
+        </strong>
+        .
       </p>
       <p
         style={{
@@ -113,6 +118,9 @@ const Landing = () => {
           TedxSapienzaU
         </a>
         .
+      </p>
+      <p style={{ fontSize: "18px" }}>
+        ✉️ <strong>Email: </strong> teglia@diag.uniroma1.it
       </p>
       <h2 style={{ color: isDarkMode ? "white" : "black" }}>My recent works</h2>
       <h3 style={{ color: isDarkMode ? "white" : "black" }}>NLP</h3>
