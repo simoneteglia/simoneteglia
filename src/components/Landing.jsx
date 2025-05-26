@@ -119,8 +119,31 @@ const Landing = () => {
         </a>
         .
       </p>
-      <p style={{ fontSize: "18px" }}>
+      <p
+        style={{
+          fontSize: "18px",
+          color: isDarkMode ? "white" : "black",
+          fontWeight: "600",
+        }}
+      >
         ✉️ <strong>Email: </strong> teglia@diag.uniroma1.it
+      </p>
+      <h2 style={{ color: isDarkMode ? "white" : "black" }}>Publications</h2>
+      <p>
+        1️⃣ Simone Teglia, Simone Tedeschi, Roberto Navigli. How Much Do
+        Pretrained Language Models Know About Word Senses? In{" "}
+        <span style={{ fontStyle: "italic" }}>
+          Proceedings of the 63st Annual Meeting of the Association for
+          Computational Linguistics (ACL 2025)
+        </span>
+      </p>
+      <p>
+        2️⃣ Simone Teglia, Claudia Melis Tonti, Francesco Pro, Leonardo Russo,
+        Andrea Alfarano, Matteo Pentassuglia, Irene Amerini. R3ST: A Synthetic
+        Dataset with Real Trajectories for Urban Traffic Analysis In{" "}
+        <span style={{ fontStyle: "italic" }}>
+          Synthetic Data for Computer Vision Workshop@ CVPR 2025.
+        </span>
       </p>
       <h2 style={{ color: isDarkMode ? "white" : "black" }}>My recent works</h2>
       <h3 style={{ color: isDarkMode ? "white" : "black" }}>NLP</h3>
