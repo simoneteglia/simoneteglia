@@ -26,7 +26,7 @@ const Navbar = ({ setIsDarkMode, isDarkMode }) => {
         <p style={styles.titleStyle}>ST</p>
       </Link>
 
-      <LuSunMoon
+      {/* <LuSunMoon
         onClick={() => {
           setIsDarkMode(!isDarkMode);
           localStorage.setItem("isDark", !isDarkMode);
@@ -36,7 +36,7 @@ const Navbar = ({ setIsDarkMode, isDarkMode }) => {
           cursor: "pointer",
           color: isDarkMode ? "white" : "black",
         }}
-      />
+      /> */}
     </nav>
   );
 };

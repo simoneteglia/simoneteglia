@@ -15,6 +15,7 @@ import Langid from "./components/pages/Langid";
 import Zip from "./components/pages/Zip";
 import Careers from "./components/pages/Careers";
 import LyricsGeneration from "./components/pages/LyricsGeneration";
+import Aurora from "./components/components/Aurora";
 
 const router = createBrowserRouter([
   {
@@ -96,6 +97,23 @@ function HomeManager() {
 
   return (
     <div style={{ margin: 0 }}>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "90%",
+          zIndex: -1,
+        }}
+      >
+        <Aurora
+          colorStops={["#00FF9F", "#FF4EDB", "#FF6B00"]}
+          blend={0.8}
+          amplitude={0.5}
+          speed={0.5}
+        />
+      </div>
       <Navbar
         windowSize={windowSize}
         setIsDarkMode={setIsDarkMode}

@@ -3,6 +3,7 @@ import "../resources/landing.css";
 import CustomLink from "./components/CustomLink";
 import { useOutletContext } from "react-router-dom";
 import { FiGithub, FiLinkedin, FiTwitter, FiGlobe } from "react-icons/fi";
+import Aurora from "./components/Aurora";
 
 const Landing = () => {
   const [windowSize, setWindowSize, isDarkMode] = useOutletContext();

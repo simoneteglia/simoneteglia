@@ -14,7 +14,7 @@ body {
 
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
-  transition: all 0.2s ease-out;
+  /* transition: all 0.2s ease-out; */
   text-rendering: optimizelegibility;
 }
 
